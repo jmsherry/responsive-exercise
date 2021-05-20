@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -17,7 +17,13 @@ body {
   min-height: 100vh;
   font-family: serif;
   font-size: 1.6rem; /* PUT THIS IN */
-  /* text-align: center; */
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    text-align: left;
+  }
 }
 
 a {
@@ -111,9 +117,17 @@ svg {
   color: #fff;
   min-height: 300px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
+
+.page-header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
 .hero-text {
   width: 33.33%;
 }
@@ -129,21 +143,40 @@ section {
 
 .newsfeed {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
 .newsfeed li {
   padding-bottom: 50px;
   border-bottom: 1px solid #000;
+  width: 100%;
+  flex-basis: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .newsfeed li {
+    width: calc(50% - 15px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsfeed li {
+    /* 2 gutters of 15px divided amonst the 3 columns */
+    width: calc(33.33% - calc(calc(15px * 2) / 3));
+  }
 }
 
 .avatar {
   object-fit: cover;
-  max-height: 335px;
+  max-height: 300px;
   width: 100%;
   margin-bottom: 15px;
 }
 
+.goth .avatar {
+  max-height: 170px;
+}
 
 .page-footer {
   background-color: #000;
@@ -153,4 +186,18 @@ section {
 
 .page-footer p {
   margin-bottom: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* GOTH NEWSFEED */
+
+@media screen and (min-width: 1200px) {
+  .goth .newsfeed li {
+    /* 3 gutters of 15px divided amonst the 4 columns */
+    width: calc(25% - calc(calc(15px * 3) / 4));
+  }
 }
