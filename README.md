@@ -26,7 +26,7 @@ Some of the content has been written 'desktop first'. You'll need to use media q
 
 ### Task 3: Add your own responsive code
 
-Add a section where the goths are 4 across on desktop; 2 accross on tablet and stacked on mobile
+Add a section where the goths are 4 across on desktop; 2 across on tablet and stacked on mobile
 
 ## Breakpoints
 
