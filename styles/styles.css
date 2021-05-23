@@ -141,22 +141,25 @@ section {
   padding: 50px 15px;
 }
 
-.newsfeed {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
 .newsfeed li {
   padding-bottom: 50px;
   border-bottom: 1px solid #000;
-  width: 100%;
-  flex-basis: auto;
 }
 
 @media screen and (min-width: 600px) {
+  .newsfeed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
   .newsfeed li {
-    width: calc(50% - 15px);
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .newsfeed li {
+    width: calc(50% - 7.5px);
   }
 }
 
