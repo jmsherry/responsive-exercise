@@ -112,20 +112,27 @@ svg {
 
 .page-header {
   background-image: url(https://s3.crackedcdn.com/phpimages/article/9/9/0/618990.jpg?v=2);
-  padding: 15px;
+  /* padding: 15px; */
   background-size: cover;
   color: #fff;
-  min-height: 300px;
-  display: flex;
+  /* min-height: 300px; */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
 }
 
 .page-header .container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
+  min-height: 300px;
+  padding: 15px;
 }
 
 .hero-text {
@@ -191,10 +198,7 @@ section {
   margin-bottom: 0;
 }
 
-.container {
-  max-width: 1280px;
-  margin: auto;
-}
+
 
 /* GOTH NEWSFEED */
 
