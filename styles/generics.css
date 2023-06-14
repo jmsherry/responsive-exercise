@@ -32,7 +32,6 @@ body {
   min-height: 100vh;
 }
 
-
 /* Try to keep your margins going in one direction to avoid margin collapase or grounding. I switch all the top margins off to avoid this issue. */
 h1,
 h2,
@@ -82,7 +81,10 @@ a {
     }
   */
 
-img, picture, svg, video {
+img,
+picture,
+svg,
+video {
   display: block;
   /* This means that it can be less than 100% of the width of its parent IF the image is INTRINSICALLY smaller */
   max-width: 100%;
